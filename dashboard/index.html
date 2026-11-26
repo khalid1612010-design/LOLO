@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#f5f5f2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23ff5a36'/%3E%3Ctext x='20' y='26' text-anchor='middle' font-family='Arial' font-size='14' font-weight='700' fill='%231a0b06'%3EKM%3C/text%3E%3C/svg%3E" />
+  <title>Dashboard · KHALED MOHAMED</title>
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body class="dashboard-body">
+  <main id="gate" class="gate" hidden>
+    <button class="gate-lang-toggle" type="button" data-dash-lang-toggle aria-label="Change dashboard language">عربي</button>
+    <section class="gate-card" aria-labelledby="gateTitle">
+      <a class="brand gate-brand" href="../index.html"><span class="brand-mark">KM</span><span><strong>KHALED</strong><small>CONTENT STUDIO</small></span></a>
+      <div class="gate-kicker"><i></i> PRIVATE WORKSPACE <i></i></div>
+      <h1 id="gateTitle">Welcome back<span class="accent-dot">.</span></h1>
+      <p class="gate-intro">Sign in with the admin account authorized for this portfolio.</p>
+      <form id="gateForm" class="gate-form">
+        <label for="gateEmail">Admin email</label>
+        <div class="password-wrap"><input id="gateEmail" name="email" type="email" autocomplete="username" required /></div>
+        <label for="gatePassword" class="password-label">Password</label>
+        <div class="password-wrap"><input id="gatePassword" name="password" type="password" autocomplete="current-password" required /><button type="button" id="gateToggle" aria-pressed="false">Show</button></div>
+        <p id="gateError" class="gate-error" role="alert" hidden></p>
+        <button class="btn btn-primary gate-submit" type="submit">Sign in securely <span>→</span></button>
+      </form>
+      <div class="gate-warning"><strong>SUPABASE AUTH · ADMIN ALLOWLIST</strong><p>Only an authenticated account explicitly added to this portfolio’s admin allowlist can enter. No public sign-ups are enabled.</p></div>
+      <a class="back-link" href="../index.html">← Back to portfolio</a>
+    </section>
+    <div class="gate-foot">KHALED MOHAMED <span>·</span> DASHBOARD PREVIEW</div>
+  </main>
+  <div id="app" hidden></div>
+  <noscript>This dashboard demo requires JavaScript. Enable JavaScript to continue.</noscript>
+  <script type="module" src="../js/dashboard/main.js"></script>
+</body>
+</html>
